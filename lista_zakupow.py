@@ -4,4 +4,4 @@ shopping_list = {
 }
 
 for key, items in shopping_list.items():
-    print(f"Idę do {key} i kupuję tam {items}")
+    print(f"Idę do {key.capitalize()} i kupuję tam {[item.capitalize() for item in items]}")
