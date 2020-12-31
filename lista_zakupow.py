@@ -3,7 +3,9 @@ shopping_list = {
     "warzywniak" : ['marchew', 'seler', 'rukola']
 }
 
+items_counter = 0
 for key, items in shopping_list.items():
     print(f"Idę do {key.capitalize()} i kupuję tam {[item.capitalize() for item in items]}")
+    itmes_counter += len(items)
 
-print(f"Kupuję tam {sum([len(item[1]) for item in shopping_list.items()])} produktów.")
+print(f"Kupuję tam {items_counter} produktów.")
